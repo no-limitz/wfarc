@@ -1,0 +1,187 @@
+# Drupal 11 .gitignore
+# Based on https://github.com/github/gitignore/blob/main/Drupal.gitignore
+
+# Ignore core and vendor when managing dependencies with Composer.
+# Uncomment the next line if core and vendor are tracked in your repository.
+vendor/
+
+# Ignore Drupal's file directory
+web/sites/*/files/
+web/sites/*/private/
+
+# Ignore SimpleTest multi-site environment.
+web/sites/simpletest/
+
+# Ignore files for SCSS and CSS preprocessors.
+*.sass-cache/
+.sass-cache/
+web/sites/*/files/css/
+web/sites/*/files/js/
+
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/settings.local.php
+web/sites/*/services.local.yml
+
+# Ignore drupal core (when managing with Composer)
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
+web/libraries/
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files/
+web/sites/*/private/
+
+# Ignore backup files
+*.bak
+*.backup
+*.sql
+*.sql.gz
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node.js dependencies and build artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Frontend build tools
+web/sites/*/files/css/
+web/sites/*/files/js/
+web/themes/custom/*/node_modules/
+web/themes/custom/*/dist/
+web/themes/custom/*/build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.buildpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Icon?
+
+# Log files
+*.log
+web/sites/*/files/config_*
+error_log
+
+# Temporary files
+tmp/
+temp/
+web/sites/*/files/tmp/
+web/sites/*/files/php/
+/nbproject/
+
+# Drupal Console
+.console/
+
+# DrupalVM
+.vagrant/
+
+# DevShop
+.devshop/
+
+# Docksal
+.docksal/local.yml
+.docksal/local.env
+
+# DDEV
+.ddev/
+
+# Platform.sh
+.platform/
+
+# Pantheon
+.pantheon/
+
+# Acquia
+.acquia/
+
+# Lagoon
+.lagoon.env*
+.lagoon/
+
+# Lando
+.lando.yml
+.lando.local.yml
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Composer
+composer.phar
+
+# Drush
+drush/contrib/
+drush/Commands/contrib/
+
+# PHPUnit
+web/sites/simpletest/
+phpunit.xml
+
+# Behat
+behat.local.yml
+
+# Security checker
+.security-checker-result
+
+# Cache and temporary files
+cache/
+web/sites/*/files/styles/
+web/sites/*/files/config_*/
+
+# Backup and migration files
+*.gz
+*.zip
+*.tar
+*.tar.gz
+database.sql
+db.sql
+
+# Various other files
+.htpasswd
+robots.txt.bak
+
+# Custom additions (uncomment as needed)
+# Local configuration overrides
+# config/local/
+# drush/local/
+
+# If you're tracking your own custom modules/themes, you might want to include:
+# !web/modules/custom/
+# !web/themes/custom/
+# !web/profiles/custom/
+
+# Package manager staging (if using experimental Package Manager)
+.package_manager/
+
+# Recipe files (if you don't want to track them)
+# recipes/
+
+# Translations
+# web/sites/*/files/translations/
+
+# Configuration exports (if you prefer to track them elsewhere)
+# config/sync/

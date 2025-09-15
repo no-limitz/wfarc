@@ -1,0 +1,13 @@
+uuid: e064eca7-a6c2-4a4e-84a7-7f814023b9d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: uIta0ebP_LA4NPUuR-vmIiZL3Pno_PKmVzXbkpKMZW4
+id: media.1_1_square_small
+label: '1:1 (Square) Small'
+description: ''
+targetEntityType: media
+cache: true

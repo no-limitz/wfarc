@@ -1,0 +1,13 @@
+uuid: 8e5293ac-bd1c-438c-9c38-579c5b81839a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: lr75s7t1haZKLGSILkJZeyIj1HujzWrNl4nDxZalxwQ
+id: media.4_3_medium
+label: '4:3 Medium'
+description: ''
+targetEntityType: media
+cache: true

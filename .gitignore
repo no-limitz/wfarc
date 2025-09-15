@@ -185,3 +185,4 @@ robots.txt.bak
 
 # Configuration exports (if you prefer to track them elsewhere)
 # config/sync/
+web/sites/default/settings.php
